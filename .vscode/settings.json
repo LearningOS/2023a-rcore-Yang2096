@@ -4,5 +4,6 @@
     ],
     "rust-analyzer.linkedProjects": [
         "./os/Cargo.toml"
-    ]
+    ],
+    "rust-analyzer.check.allTargets": false
 }

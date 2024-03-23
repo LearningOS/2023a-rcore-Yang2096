@@ -1,5 +1,3 @@
-use core::time::Duration;
-
 pub fn console_putchar(c: usize) {
     #[allow(deprecated)]
     sbi_rt::legacy::console_putchar(c);
@@ -13,8 +11,4 @@ pub fn shutdown(failure: bool) -> ! {
         system_reset(Shutdown, SystemFailure);
     }
     unreachable!()
-}
-
-pub fn sleep(duration: Duration) {
-    
 }
